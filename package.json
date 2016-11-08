@@ -1,23 +1,23 @@
 {
   "name": "djjs",
   "version": "1.0.0",
-  "description": "JS Motion Detection ===================",
-  "main": "index.js",
+  "description": "INSTALLATION \r 1. git clone https://github.com/willzjacobson/djjs.git\r 2. npm install\r 3. Have fun!",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --watch server -e js,html server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ReallyGood/js-motion-detection.git"
+    "url": "git+https://github.com/willzjacobson/djjs.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ReallyGood/js-motion-detection/issues"
+    "url": "https://github.com/willzjacobson/djjs/issues"
   },
-  "homepage": "https://github.com/ReallyGood/js-motion-detection#readme",
+  "homepage": "https://github.com/willzjacobson/djjs#readme",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.14.0"
   }
 }

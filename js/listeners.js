@@ -64,11 +64,11 @@ function playLoop(element) {
 }
 
 // Go back to time 0 and play. Used for nonlooping audio elements with fixed playbackRate. 
-function playOnce(element) {
+/*function playOnce(element) {
 	var audio = element.getElementsByTagName('audio')[0];
 	audio.currentTime = 0;
 	audio.play();
-}
+}*/
 
 // Mutes / unmutes all audios that were playing
 function pauseAll() {
