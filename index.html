@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>JavaScript Motion Detection</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <link id="favicon" rel="icon" type="image/ico" sizes="16x16" href="images/favicon.ico">
+    <link id="favicon2x" rel="icon" type="image/png" sizes="32x32" href="images/icon.png">
+</head>
+<body>
+
+<div id="container">
+
+    <div id="content">
+
+        <video id="webcam" autoplay width="640" height="480"></video>
+
+        <canvas id="canvas-source" width="640" height="480"></canvas>
+        <canvas id="canvas-highlights" width="640" height="480"></canvas>
+        <canvas id="canvas-blended" width="640" height="480"></canvas>
+
+        <div id="hotSpots">
+
+            <div id="one">
+                <audio
+                    class="loop" 
+                    loop
+                    src= "https://api.soundcloud.com/tracks/233116497/stream?client_id=0b6cfb2f09b2bc8c0345d9579914a1b9"
+                    muted="true">                  
+                </audio>
+            </div>
+
+            <div id="two">
+                <audio 
+                    class="loop" 
+                    loop
+                    src= "https://api.soundcloud.com/tracks/233116232/stream?client_id=0b6cfb2f09b2bc8c0345d9579914a1b9"
+                    muted="true">                   
+                </audio>
+            </div>
+
+            <div id="three">
+                <audio 
+                    class="loop" 
+                    loop
+                    src= "https://api.soundcloud.com/tracks/233116037/stream?client_id=0b6cfb2f09b2bc8c0345d9579914a1b9"
+                    muted="true">                 
+                </audio>
+            </div>
+
+            <div id="four">
+                <audio 
+                    class="loop" 
+                    loop
+                    src= "https://api.soundcloud.com/tracks/233134796/stream?client_id=0b6cfb2f09b2bc8c0345d9579914a1b9"
+                    muted="true">                
+                </audio>
+            </div>
+
+            <div id="five">
+                <audio 
+                    class="loop" 
+                    loop
+                    src= "https://api.soundcloud.com/tracks/233134783/stream?client_id=0b6cfb2f09b2bc8c0345d9579914a1b9"
+                    muted="true">                 
+                </audio>
+            </div>
+
+            <div id="six">
+                <audio 
+                    class="loop" 
+                    loop
+                    src= "https://api.soundcloud.com/tracks/233143259/stream?client_id=0b6cfb2f09b2bc8c0345d9579914a1b9"
+                    muted="true">                 
+                </audio>
+            </div>
+
+            <div id="seven">
+                <audio src="https://api.soundcloud.com/tracks/233127044/stream?client_id=0b6cfb2f09b2bc8c0345d9579914a1b9"></audio>
+            </div>
+
+            <div id="eight">
+                <audio src="https://api.soundcloud.com/tracks/233135073/stream?client_id=0b6cfb2f09b2bc8c0345d9579914a1b9"></audio>
+            </div>
+
+            <div id="nine">
+                <audio src="https://api.soundcloud.com/tracks/233135087/stream?client_id=0b6cfb2f09b2bc8c0345d9579914a1b9"></audio>
+            </div>
+
+            <div id="ten">
+                <audio 
+                    class="loop" 
+                    loop
+                    src= "https://api.soundcloud.com/tracks/233135329/stream?client_id=0b6cfb2f09b2bc8c0345d9579914a1b9"
+                    muted="true">                 
+                </audio>
+            </div>
+
+            <div id="eleven">
+                <audio 
+                    class="loop" 
+                    loop
+                    src= "https://api.soundcloud.com/tracks/233143227/stream?client_id=0b6cfb2f09b2bc8c0345d9579914a1b9"
+                    muted="true">                 
+                </audio>
+            </div>
+
+            <div id="twelve">
+                <audio 
+                    class="loop" 
+                    loop
+                    src= "https://api.soundcloud.com/tracks/233143239/stream?client_id=0b6cfb2f09b2bc8c0345d9579914a1b9"
+                    muted="true">                 
+                </audio>
+            </div>
+
+            <div id="thirteen">
+                <audio 
+                    class="loop" 
+                    loop
+                    src= "https://api.soundcloud.com/tracks/233141894/stream?client_id=0b6cfb2f09b2bc8c0345d9579914a1b9"
+                    muted="true">                 
+                </audio>
+            </div>
+
+            <div id="fourteen">
+                <audio 
+                    class="loop" 
+                    loop
+                    src= "https://api.soundcloud.com/tracks/233141877/stream?client_id=0b6cfb2f09b2bc8c0345d9579914a1b9"
+                    muted="true">                 
+                </audio>
+            </div>
+
+            <div id="fifteen">
+                <audio 
+                    class="loop" 
+                    loop
+                    src= "https://api.soundcloud.com/tracks/233141859/stream?client_id=0b6cfb2f09b2bc8c0345d9579914a1b9"
+                    muted="true">                 
+                </audio>
+            </div>
+
+            <div id="faster"></div>
+            <div id="slower"></div>
+            <div id="pause"></div>
+                
+        </div>
+    </div>
+
+
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="js/motionSensing.js"></script>
+<script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+<script src="/js/soundcloud.js"></script>
+<script src="js/listeners.js"></script>
+
+</body>
+</html>
