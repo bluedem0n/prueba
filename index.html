@@ -1,148 +1,51 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>JavaScript Motion Detection</title>
-    <link rel="stylesheet" href="styles/main.css"/>
-    <link id="favicon" rel="icon" type="image/ico" sizes="16x16" href="images/favicon.ico">
-    <link id="favicon2x" rel="icon" type="image/png" sizes="32x32" href="images/icon.png">
+	<title>JavaScript Motion Detection</title>
+	<link rel="stylesheet" href="styles/main.css" />
+	<link id="favicon" rel="icon" type="image/ico" sizes="16x16" href="images/favicon.ico">
+	<link id="favicon2x" rel="icon" type="image/png" sizes="32x32" href="images/icon.png">
 </head>
+
 <body>
 
-<div id="container">
+	<div id="container">
 
-    <div id="content">
+		<div id="content">
 
-        <video id="webcam" autoplay width="640" height="480"></video>
+			<video id="webcam" autoplay width="640" height="480"></video>
 
-        <canvas id="canvas-source" width="640" height="480"></canvas>
-        <canvas id="canvas-highlights" width="640" height="480"></canvas>
-        <canvas id="canvas-blended" width="640" height="480"></canvas>
+			<canvas id="canvas-source" width="640" height="480"></canvas>
+			<canvas id="canvas-highlights" width="640" height="480"></canvas>
+			<canvas id="canvas-blended" width="640" height="480"></canvas>
 
-        <div id="hotSpots">
+			<div id="hotSpots">
 
-            <div id="one">
-                <audio
-                    class="loop" 
-                    src= "musica/uno.mp3"
-                    muted="true">                  
-                </audio>
-            </div>
+				<div id="one">
+					<audio class="loop" src="musica/uno.mp3" muted="true">
+					</audio>
+				</div>
 
-            <div id="two">
-                <audio 
-                    class="loop" 
-                    src= "musica/dos.mp3"
-                    muted="true">                   
-                </audio>
-            </div>
+				<div id="two">
+					<audio class="loop" src="musica/dos.mp3" muted="true">
+					</audio>
+				</div>
 
-            <div id="three">
-                <audio 
-                    class="loop" 
-                    src= "musica/tres.mp3"
-                    muted="true">                 
-                </audio>
-            </div>
+				<div id="faster"></div>
+				<div id="slower"></div>
+				<div id="pause"></div>
 
-            <div id="four">
-                <audio 
-                    class="loop" 
-                     src= "musica/tres.mp3"
-                    muted="true">                
-                </audio>
-            </div>
-
-            <div id="five">
-                <audio 
-                    class="loop" 
-                    loop
-                    src= "musica/tres.mp3"
-                    muted="true">                 
-                </audio>
-            </div>
-
-            <div id="six">
-                <audio 
-                    class="loop" 
-                    src= "musica/tres.mp3"
-                    muted="true">                 
-                </audio>
-            </div>
-
-            <div id="seven">
-                <audio  src= "musica/cuatro.mp3"></audio>
-            </div>
-
-            <div id="eight">
-                <audio  src= "musica/cinco.mp3"></audio>
-            </div>
-
-            <div id="nine">
-                <audio src= "musica/seis.mp3"></audio>
-            </div>
-
-            <div id="ten">
-                <audio 
-                    class="loop" 
-                    src= "musica/cuatro.mp3"
-                    muted="true">                 
-                </audio>
-            </div>
-
-            <div id="eleven">
-                <audio 
-                    class="loop" 
-                    src= "musica/ocho.mp3"
-                    muted="true">                 
-                </audio>
-            </div>
-
-            <div id="twelve">
-                <audio 
-                    class="loop" 
-                   	src= "musica/diec.mp3"
-                    muted="true">                 
-                </audio>
-            </div>
-
-            <div id="thirteen">
-                <audio 
-                    class="loop" 
-					src= "musica/onice.mp3"
-                    muted="true">                 
-                </audio>
-            </div>
-
-            <div id="fourteen">
-                <audio 
-                    class="loop" 
-                   	src= "musica/onice.mp3"
-                    muted="true">                 
-                </audio>
-            </div>
-
-            <div id="fifteen">
-                <audio 
-                    class="loop" 
-                    src= "musica/onice.mp3"
-                    muted="true">                 
-                </audio>
-            </div>
-
-            <div id="faster"></div>
-            <div id="slower"></div>
-            <div id="pause"></div>
-                
-        </div>
-    </div>
+			</div>
+		</div>
 
 
-</div>
+	</div>
 
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/motionSensing.js"></script>
-<script src="js/listeners.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/motionSensing.js"></script>
+	<script src="js/listeners.js"></script>
 
 </body>
-</html>
 
+</html>
